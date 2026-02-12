@@ -313,3 +313,11 @@ const docButton = document.getElementById('docbutton');
 docButton.addEventListener('click', function() {
     window.location.href = "docs.html";
 })
+
+// help
+
+const helpButton = document.getElementById('help');
+
+helpButton.addEventListener('click', function() {
+    window.location.href = "https://github.com/malynkz/JS-pendulum-simulation"
+})

@@ -1,5 +1,5 @@
 HTML page that simulates the motion of a simple pendulum based on the work done by Piskunov in his "Differential and Integral Calculus Vol II". All the math used for this project is accessible by clicking on the 
-"Documentation" button in the home page, or in the docs folder available above.
+"Documentation" button in the home page, or in the docs folder available above. "Help" button redirects to this page.
 
 The simulation can be used in two modes:
 ## Simple analytic pendulum

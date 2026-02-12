@@ -51,13 +51,6 @@ function s_prime(s_max, len, value_s)
     return 2 * sqrt(g * len) * sqrt(sin((value_s + s_max)/(2 * len)) * sin((s_max - value_s)/(2 * len)));
 }
 
-// complete euler method
-
-function v_prime(in_s)
-{
-    return g * sin(in_s/l);
-}
-
 // s'' formula
 
 function acceleration(start_s, len)

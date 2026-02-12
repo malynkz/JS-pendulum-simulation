@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Pendulum Simulator</title>
+    <link rel="stylesheet" href="pendsimcss.css">
+</head>
+<body>
+    <h1>Pendulum Simulator</h1>
+    <div class="slider-box">
+        <label>Rope Length: <span id="ropeValue">0</span></label>
+        <input type="range" min="30" max="100" value="70" class="slider" id="ropeSlider">
+    </div>
+    <div class="slider-box">
+        <label>Maximum angle: <span id="angleValue">0</span></label>
+        <input type="range" min="0" max="25" value="15" class="slider" id="angleSlider">
+    </div>
+    <div class="homebutton">
+        <button id="startbutton">Start</button>
+    </div>
+    <div class="homebutton">
+        <button id="refreshbutton">Refresh page</button>
+    </div>
+    <div class="homebutton">
+        <button id="stopbutton">Stop simulation</button>
+    </div>
+    <div class="homebutton">
+        <button id="euler">Euler method page</button>
+    </div>
+
+    <div class="helpbutton">
+        <button id="help">Help</button>
+    </div>
+    <div class="helpbutton">
+        <button id="docbutton">Documentation</button>
+    </div>
+    
+    <div class="pendulum-container">
+        <div class="arch"></div>
+        <div class="pendulum">
+            <div class="rope">
+                <div class="ball"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="settings-box">
+        <h3>Settings</h3>
+        <label class="checkbox">
+            <input type="checkbox" id="showFunction">
+            Show Function
+        </label>
+        
+        <label class="checkbox">
+            <input type="checkbox" id="showPeriod">
+            Show period
+        </label>
+    </div>
+
+    <div class="graph-box">
+        <div class="x-axis"></div>
+        <div class="y-axis"></div>
+        <canvas id="graphCanvas" width="500" height="300"></canvas>
+    </div>
+
+    <div class="period-container" id="period">Period:</div>
+
+    <script src="pendsimjs.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Pendulum Simulator - Euler Method Page</title>
+    <link rel="stylesheet" href="pendsimcss.css">
+</head>
+<body>
+    <h1>Euler Method Page</h1>
+    <div class="slider-box">
+        <label>Rope Length: <span id="ropeValue-e">0</span></label>
+        <input type="range" min="30" max="100" value="70" class="slider" id="ropeSlider-e">
+    </div>
+    <div class="slider-box">
+        <label>Maximum angle: <span id="angleValue-e">0</span></label>
+        <input type="range" min="0" max="35" value="15" class="slider" id="angleSlider-e">
+    </div>
+
+    <div class="settings-box-e">
+        <h3>Settings</h3>
+        <label class="checkbox">
+            <input type="checkbox" id="eulermode">
+            Show accurate Euler method
+        </label>
+        <label class="checkbox">
+            <input type="checkbox" id="showFunction">
+            Show Function
+        </label>
+        
+        <label class="checkbox">
+            <input type="checkbox" id="showPeriod">
+            Show period
+        </label>
+    </div>
+
+    <div class="pendulum-container-e">
+        <div class="pendulum-e1">
+            <div class="rope">
+                <div class="ball2"></div>
+            </div>
+        </div>
+        <div class="pendulum-e2">
+            <div class="rope">
+                <div class="ball"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="eulerbutton">
+        <button id="startbutton">Start</button>
+    </div>
+    <div class="eulerbutton">
+        <button id="refreshbutton">Refresh</button>
+    </div>
+    <div class="eulerbutton">
+        <button id="stopbutton">Stop</button>
+    </div>
+    <div class="eulerbutton">
+        <button id="exitbutton">Exit</button>
+    </div>
+
+    <div class="graph-box-e">
+        <div class="x-axis"></div>
+        <div class="y-axis"></div>
+        <canvas id="graphCanvas" width="500" height="300"></canvas>
+    </div>
+
+    <div class="expected-period-e" id="experiod">T = 2π √(l/g):</div>
+
+    <div class="period-container-e" id="period1">Period 1:</div>
+    <div class="period-container-e" id="period2">Period 2:</div>
+
+    <script src="eulerjs.js"></script>
+</body>
